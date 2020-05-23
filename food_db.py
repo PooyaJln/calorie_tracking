@@ -2,8 +2,7 @@ import sqlite3
 
 
 def connect():
-    conn = sqlite3.connect(food_db, timeout=None, isolation_level=None,
-                           detect_types=None, factory=None)
+    conn = sqlite3.connect("food_db")
     cur = conn.cursor()
     cur.execute("""CREATE TABLE if NOT EXISTS food_tbl (
                                     id INTEGER,
