@@ -32,8 +32,10 @@ def food_input():
     food_name = input("Please enter the food's name:")
     food_fat = input("Please enter it's fat value:")
     food_protein = input("Please enter it's protein value:")
-    food_carbs = input("Please enter it's carbihydrate value:")
+    food_carbs = input("Please enter it's carbohydrate value:")
 
 
 food_1 = food("chicken breast", 2, 21, 0)
 print(food_1.food_name, food_1.food_calories())
+
+print(food_1)
